@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Web</title>
+</head>
+
+<body>
+    <div id="back-opa" class="opacity">
+
+    </div>
+    <div id="coupon-div" class="floting-coupan">
+        <button id="close-btn-coupan">&times;</button>
+        <div class="card-coupon">
+            <div>
+                <h2 style="background-color: #24921e; width: fit-content; padding: 10px; border-radius: 5px;">#3000EXTRA
+                </h2>
+                <h2>This website <br class="brak"> is a Responsive Website</h2>
+                <p>Enjoy Viewing the products, Products are good and use coupon code #3342extra for offers. to avail
+                    more keep
+                    ordering till 20 orders compleat in your account.
+                </p>
+                <button>Avail Now</button>
+            </div>
+            <img src="img/Mob res.png" alt="Responsive">
+        </div>
+    </div>
+
+    <header>
+        <div id="head-main" class="main-container">
+            <div class="main-wraper">
+                <div>
+                    <div><img src="img/SD Media.png" alt="logo"></div>
+                </div>
+                <nav>
+                    <ul id="change-color">
+                        <li>
+                            <select>
+                                <option> Language </option>
+                                <option> English </option>
+                                <option> Hindi </option>
+                                <option> Tamil </option>
+                            </select>
+                        </li>
+                        <li>Your Orders</li>
+                        <li onclick="change()" id="mode-btn" class="toggle-li"> Mode <img id="toggle-img"
+                                src="https://api.iconify.design/gg:dark-mode.svg" alt=""> </li>
+                        <!-- <span class="toggle">  </span> -->
+                    </ul>
+                </nav>
+
+                <!-- <nav class="mob-nav">
+                    <ul id="change-color">
+                        <li> 
+                            <select>
+                            <option> Language </option>
+                            <option> English </option>
+                            <option> Hindi </option>
+                            <option> Tamil </option>
+                            </select>
+                        </li>
+                        <li>Your Orders</li>
+                        <li onclick="change()" id="mode-btn" class="toggle-li"> Mode <img id="toggle-img" src="https://api.iconify.design/gg:dark-mode.svg" alt=""> </li>
+                    </ul>
+                </nav> -->
+
+                <div class="input-wraper">
+                    <input placeholder="Search Products..." type="text">
+                </div>
+
+                <div id="mob-humburger" class="mob-toggle">
+                    <div>
+                        <span id="mob-humburger-line-1"></span>
+                        <span id="mob-humburger-line-2"></span>
+                        <span id="mob-humburger-line-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 80px; background-image: linear-gradient(100deg, #d71c0f, #9c2419, #d71c0f) ; padding: 0px; "
+            class="main-container">
+            <ul style="list-style: none;  flex-wrap: wrap; z-index: 0;" class="main-wraper">
+                <li>Toys</li>
+                <li>Computer Accessories</li>
+                <li>Clothings</li>
+                <li>Foot Wears</li>
+                <li>Electronics</li>
+                <li>Sports Items</li>
+                <li>Mobiles</li>
+                <li>Cosmetics</li>
+                <li>Food & Snacks</li>
+                <li>Toiletries</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="loc" style="display: flex; justify-content: center; background: #9fd0f6; padding: 10px;">
+        <div style="display: flex; align-items: center; width: 85%;">
+            <!-- <button onclick="geolocation()"
+                style="display: flex; align-items: center; cursor: pointer; padding: 7px 11px; border-radius: 20px; border: none;"> <img style="width:20px; margin-right: 5px;" src="https://api.iconify.design/material-symbols:location-on.svg">
+                Get Location</button> -->
+            <div
+                style="display: flex; align-items: center; padding: 7px 11px; border-radius: 20px; border: none; background: #ffffff;">
+                <img style="width:20px;" src="https://api.iconify.design/material-symbols:location-on.svg">
+                <p style="margin-left: 5px;" id="Location"> </p>
+            </div>
+            <p style="margin-left: 10px;">Delivery isn't available at your place</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="main-container-wrap">
+            <div class="width-container">
+                <div class="bannerproduct-1">
+                    <div class="sec-img-1">
+                        <img class="b-logo" src="img/Boat_Logo removebg-preview.png" alt="Boat Logo">
+                        <h2>Buy 2 Boat Earbuds & Get 30% offer</h2>
+                        <p>Offer valid only today</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="sec-img">
+                        <img class="p-img" src="img/Boat Product.png" alt="Earbuds">
+                    </div>
+                </div>
+                <div class="bannerproduct-2">
+                    <div class="card-1">
+                        <img src="img/Mobile.jpeg" alt="Mobile">
+                        <button>Buy Now</button>
+                        <img class="po-logo" src="img/Vivo-Logo.jpg" alt="vivo-logo">
+                    </div>
+                    <div style="background-image: linear-gradient(60deg, #da9fcd, #9fd0f6);" class="card-1">
+                        <img src="img/TV.jpg" alt="Mobile">
+                        <img class="po-logo" src="img/llo.jpg" alt="vivo-logo">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+                <div class="bannerproduct-2">
+                    <div class="card-1">
+                        <img src="img/Shoe.jpeg" alt="Mobile">
+                        <button>Buy Now</button>
+                        <img class="po-logo" src="img/Adi.jpg" alt="vivo-logo">
+                    </div>
+                    <div style="background-image: linear-gradient(60deg, #dace9f, #c6bc4f);" class="card-1">
+                        <img src="img/Cloth.jpg" alt="Mobile">
+                        <img class="po-logo" src="img/Adi 2.jpg" alt="vivo-logo">
+                        <button>Buy Now</button>
+                    </div>
+                    <div class="card-1">
+                        <img src="img/bingo.jpeg" alt="Mobile">
+                        <button>Buy Now</button>
+                        <img class="po-logo" src="img/bingo-Logo.jpg" alt="vivo-logo">
+                    </div>
+                    <div style="background-image: linear-gradient(60deg, #a9da9f, #24921e);" class="card-1">
+                        <img src="img/Grandeur_1.jpg" alt="Mobile">
+                        <img class="po-logo" src="img/awiss-Logo.jpg" alt="vivo-logo">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="shoe-sec">
+            <div class="shoe-subsec">
+                <div class="flex-item-1">
+                    <h2>
+                        35% Offer for all brand Footwears
+                    </h2>
+                    <p>
+                        buy 2 pairs of shoes and get one pair Free!
+                    </p>
+                    <button>Get offer</button>
+                </div>
+                <div class="flex-item-2">
+                    <img src="img/Shoe Blur.png" alt="Shoe">
+                    <div class="offers-batch">
+                        <h2><span class="offer-per">35%</span> Offer</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="prod-sec">
+            <div class="produ-main">
+                <div class="products">
+                    <div>
+                        <img src="img/p1.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p2.jpg">
+                    </div>
+                    <div>
+                        <h3>Just Herbs - Foundation Color</h3>
+                        <p>A healthy 200gm Foundation Color Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p3.jpg">
+                    </div>
+                    <div>
+                        <h3>Harba Health - Nut Mix container</h3>
+                        <p>A healthy & Natural Nut Mix Container, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p4.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p5.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p6.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p7.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p8.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p9.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p10.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p11.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p12.jpg">
+                    </div>
+                    <div>
+                        <h3>Hapillo - California Almond</h3>
+                        <p>A healthy & Natural Almond 500gm Packet, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p13.jpg">
+                    </div>
+                    <div>
+                        <h3>SanDeskPods Black AirPods</h3>
+                        <p>A Hight quality & Full sound SanDesk AirPods, Get in this great sale with 10% offer</p>
+                        <p>&#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="img/p14.jpg">
+                    </div>
+                    <div>
+                        <h3>Combo of Dabar and Fitness Powder</h3>
+                        <p>A healthy Combo of Dabar and Fitness Powder, Get in this great sale with 10%
+                            offer</p>
+                        <p>&#9733; &#9733; &#9733; &#9733;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container-wrap">
+            <div class="width-container">
+                <div class="bannerproduct-2">
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Mobile case.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Mobile Case</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Stand.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Footwear Stand</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Shoe.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Casual Shoes</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/AirPods.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">AirPods</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Chair.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Dinning Chairs</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Child Bike.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Bike Toy</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/Jam.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">Mixed Fruit Jam</h3>
+                        <button>Buy Now</button>
+                    </div>
+                    <div style="background: white;" class="card-1">
+                        <img src="img/TV.jpg" alt="Mobile">
+                        <h3 style="margin: 10px 0px;">FHD 4K - Television</h3>
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <form>
+            <div style= "display: flex; justify-content: center; margin-top: 80px; padding: 40px 0px; background: #9fd0f6;">
+                <div class="form-map-wrap">
+                    <div>
+                        <h2>Form Validation</h2>
+                        <div class="input-lable">
+                            <label for="name">Name</label>
+                            <input id="Name-in" onblur="nameInput()" type="text">
+                            <p style="font-size: 13px; margin-top: 5px; color: #d71c0f;" id="Name-in-response" ></p>
+                        </div>
+                        <div class="input-lable">
+                            <label for="Email">Email ID</label>
+                            <input id="mail" type="email" oninput="emailInput()">
+                            <p style="font-size: 13px; margin-top: 5px; color: #d71c0f;" id="Email-in-response"></p>
+                        </div>
+                        <div class="input-lable">
+                            <label for="text">Message</label>
+                            <textarea name="Message" id="" cols="30" rows="10">
+    
+                            </textarea>
+                            <button style="width: fit-content; margin: 10px 0px; padding: 8px 10px;
+                            border: none; font-size: 15px; cursor: pointer; color: #ffffff; border-radius: 5px; background: #F0473A;">Submit</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="margin-bottom: 15px;">Our Location</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101445.11537025895!2d-122.08385107820277!3d37.386051692026264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sMountain%20View%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1698342474892!5m2!1sen!2sin"
+                            width="600" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer id="footer-change">
+        <div>
+            <center>
+                <p style="margin: 10px;">Customer Support: +1 89569 84118, California, USA </p>
+                &copy; All rights reserved
+            </center>
+        </div>
+    </footer>
+    <script src="geoLocation.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // const location = document.getElementById('Location');
+
+        // function geolocation() {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(showPosition)
+        //     } else {
+        //         location.innerText = "Location Not Found";
+        //     }
+        // }
+
+        // function showPosition(data) {
+        //     console.log(data);
+        // }
+
+        // window.onload(loadCoupan());
+        // window.onload(geolocation());
+        window.onload = function () {
+            loadCoupan();
+            geolocation();
+        }
+
+    </script>
+</body>
+
+</html>
